@@ -1,0 +1,8 @@
+.card-body {
+    background-image: linear-gradient(to right, #00b4db, #03526d);
+}
+
+.appoint-link {
+    text-decoration: none;
+    color: aliceblue;
+}

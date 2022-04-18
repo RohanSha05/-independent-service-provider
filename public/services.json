@@ -1,0 +1,23 @@
+[
+  {
+    "id": "124e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Replacement of missing teeth",
+    "image": "https://i.ibb.co/mXPkvKs/package1.jpg",
+    "description": "Ental implants are one of the most common methods of tooth replacement.Dental implants are a very reliable type of tooth replacement that both looks and feels like a real tooth.",
+    "price": 420
+  },
+  {
+    "id": "125e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Orthodontic Treatment",
+    "description": "Orthodontic treatment is a way of straightening or moving teeth, to improve the appearance of the teeth and how they work. It can also help to look after the long-term health of your teeth.",
+    "image": "https://i.ibb.co/ZG9nhb3/package2.jpg",
+    "price": 499
+  },
+  {
+    "id": "126e13b9-2d54-4b2f-a74d-a77b362d6ead",
+    "name": "Single Sitting Root Canal Treatment",
+    "description": "When there is an acute infection with no pus accumalation in & around the tooth, Root canal treatment can be completed in a single sitting. The biggest diagnostic aid in this case is an X-ray.",
+    "image": "https://i.ibb.co/wQKr136/package3.jpg",
+    "price": 599
+  }
+]
