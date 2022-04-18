@@ -56,7 +56,7 @@ const Register = () => {
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Sign-up
                 </Button>
                 <p className='mt-3'>Already have an account? <Link
                     to='/signin' className='text-danger pe-auto text-decoration-none' onClick={navigateSignin}>Please sign-in</Link></p>
