@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Form, Button } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import '../Signin/Signin.css'
@@ -21,6 +21,8 @@ const Signin = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
 
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
     if (user) {
         navigate(from, { replace: true });
     }
@@ -32,9 +34,17 @@ const Signin = () => {
         signInWithEmailAndPassword(email, password);
     }
 
+
     const navigateRegister = event => {
         navigate('/register')
     }
+
+    const handlePasswordReset = async () => {
+        const email = emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        alert('Sent email');
+    }
+
     return (
         <div className='d-flex justify-content-center'>
             <Form onSubmit={handleSubmit} className='w-25 mt-5 p-5 form-body'>
@@ -54,10 +64,14 @@ const Signin = () => {
                     <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
                 <Button variant="primary" type="submit">
-                    Submit
+                    Sign-in
                 </Button>
+                <div className='mt-2'>
+                    <span>Forget Password?</span>
+                    <Button onClick={handlePasswordReset} variant='link' className=' text-info'>Reset Password</Button>
+                </div>
                 <p className='mt-3'>Not Registered Yet? <Link
-                    to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}>Please register</Link></p>
+                    to='/register' className='text-info pe-auto' onClick={navigateRegister}>Please register</Link></p>
             </Form>
 
         </div>
