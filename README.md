@@ -1,5 +1,5 @@
 **Jiffy Dental Center**
-## [Car-Nobyl](https://my-dental-care-f2f24.web.app/)
+## [Jiffy Dental Care](https://my-dental-care-f2f24.web.app/)
 
 -this a personal dentist website
 -here you can treat your your tooths comfortly
