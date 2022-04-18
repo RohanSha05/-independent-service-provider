@@ -17,7 +17,9 @@ const Service = (props) => {
                         {description}
                     </Card.Text>
                     <p className='fw-bolder'>Cost: ${price}</p>
-                    <Button> <Link className='appoint-link' to="/checkout" element={<Checkout></Checkout>}>Appoint Now</Link> </Button>
+                    <div className='d-flex justify-content-center'>
+                        <Button> <Link className='appoint-link' to="/checkout" element={<Checkout></Checkout>}>Appoint Now</Link> </Button>
+                    </div>
                 </Card.Body>
             </Card>
         </div>

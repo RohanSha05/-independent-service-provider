@@ -1,5 +1,5 @@
 .card-body {
-    background-image: linear-gradient(to right, #00b4db, #03526d);
+    background-image: radial-gradient(circle farthest-corner at 22.4% 21.7%, rgba(4, 189, 228, 1) 0%, rgba(2, 83, 185, 1) 100.2%);
 }
 
 .appoint-link {

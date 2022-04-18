@@ -9,7 +9,7 @@ const Services = () => {
             .then(data => setServices(data));
     }, [])
     return (
-        <div className='row mt-5'>
+        <div className='row mt-5  mx-auto'>
             {
                 services.map(services => <Service services={services}></Service>)
             }
