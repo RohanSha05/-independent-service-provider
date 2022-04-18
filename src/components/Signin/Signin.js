@@ -35,7 +35,6 @@ const Signin = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password);
-        console.log()
     }
 
 
@@ -56,10 +55,6 @@ const Signin = () => {
         signInWithPopup(auth, provider)
             .then(result => {
                 const user = result.user;
-                console.log(user)
-            })
-            .catch(error => {
-                console.log(error)
             })
     }
 

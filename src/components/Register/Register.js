@@ -30,7 +30,6 @@ const Register = () => {
         const name = nameRef.current.value;
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        console.log(email, password)
 
         createUserWithEmailAndPassword(email, password)
     }
